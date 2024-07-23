@@ -48,4 +48,4 @@ I am a Data analyst <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/g
 - :zap: In my spare time, I work on examples from Leetcode, and then I also do some projects from Kaggle.
 
 - :How to reach me:
-[![Email Badge](https://img.shields.io/badge/-Email-red?style=flat&logo=Gmail&logoColor=white)](baxtiyorpardaboyev899@gmail.com)
+[![Email Badge](https://img.shields.io/badge/-Email-red?style=flat&logo=Gmail&logoColor=white)]([baxtiyorpardaboyev899@gmail.com](https://mail.google.com/mail/u/0/#inbox))
