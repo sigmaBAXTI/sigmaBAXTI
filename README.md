@@ -22,4 +22,6 @@
 </div>
 
 
-<img src="https://komarev.com/ghpvc/?username=sigmaBAXTI&style=flat-square&color=blue" align="center" alt=""/>
+<div id="badges" align="center">
+  <img src="https://komarev.com/ghpvc/?username=sigmaBAXTI&style=flat-square&color=blue" alt=""/>
+</div>
