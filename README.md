@@ -51,7 +51,7 @@ I am a Data analyst <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/g
 [![Email Badge](https://img.shields.io/badge/-Email-red?style=flat&logo=Gmail&logoColor=white)](https://mail.google.com/mail/baxtiyorpardaboyev899@gmail.com)
 
 
-<div>
+<div align="center">
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" title="PostgreSQL" alt="PostgreSQL" width="40" height="40"/>&nbsp;
