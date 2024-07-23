@@ -63,4 +63,4 @@ I am a Data analyst <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/g
 ---
 
 ### :fire: My Stats :
-https://github-readme-streak-stats.herokuapp.com/?user=sigmaBAXTI
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=sigmaBAXTI&theme=dark&background=000000)](https://git.io/streak-stats)
