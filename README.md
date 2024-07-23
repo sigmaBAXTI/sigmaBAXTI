@@ -20,3 +20,6 @@
     <img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode Badge"/>
   </a>
 </div>
+
+
+<img src="https://komarev.com/ghpvc/?username=sigmaBAXTI&style=flat-square&color=blue" alt=""/>
