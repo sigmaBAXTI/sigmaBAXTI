@@ -12,4 +12,13 @@
   <a href="your-twitter-URL">
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </a>
+  <a href="https://t.me/PardaboyevBaxtiyor">
+    <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge"/>
+  </a>
+  <a href="https://t.me/DataScienceWizard">
+    <img src="https://img.shields.io/badge/Telegram%20Channel-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Channel Badge"/>
+  </a>
+  <a href="https://leetcode.com/u/kelajak/">
+    <img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode Badge"/>
+  </a>
 </div>
