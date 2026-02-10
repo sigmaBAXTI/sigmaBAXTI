@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Baxtiyor — AI/Data Science & Software Engineer. Portfolio, projects, and contact." />
+  <title>Baxtiyor | Portfolio</title>
+
+  <style>
+    :root{
+      --bg: #0b1020;
+      --panel: rgba(255,255,255,0.06);
+      --panel2: rgba(255,255,255,0.09);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+      --muted2: rgba(255,255,255,0.55);
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 16px 40px rgba(0,0,0,0.35);
+      --accent: #7c3aed; /* purple */
+      --accent2:#06b6d4; /* cyan */
+      --ok:#22c55e;
+      --warn:#f59e0b;
+      --danger:#ef4444;
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1100px;
+    }
+
+    [data-theme="light"]{
+      --bg:#f6f7fb;
+      --panel: rgba(10,15,30,0.05);
+      --panel2: rgba(10,15,30,0.08);
+      --text: rgba(10,15,30,0.92);
+      --muted: rgba(10,15,30,0.70);
+      --muted2: rgba(10,15,30,0.55);
+      --border: rgba(10,15,30,0.10);
+      --shadow: 0 16px 40px rgba(10,15,30,0.12);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(124,58,237,0.28), transparent 55%),
+        radial-gradient(900px 650px at 80% 20%, rgba(6,182,212,0.18), transparent 55%),
+        radial-gradient(900px 650px at 50% 90%, rgba(34,197,94,0.12), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:28px 18px 60px; }
+
+    /* Topbar */
+    .topbar{
+      position:sticky; top:0;
+      backdrop-filter: blur(12px);
+      background: linear-gradient(to bottom, rgba(0,0,0,0.18), rgba(0,0,0,0.02));
+      border-bottom:1px solid var(--border);
+      z-index:5;
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 18px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:14px;
+      background:
+        radial-gradient(12px 12px at 30% 30%, rgba(255,255,255,0.85), rgba(255,255,255,0.0) 70%),
+        linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 10px 26px rgba(124,58,237,0.25);
+      border:1px solid rgba(255,255,255,0.22);
+    }
+    .nav{
+      display:flex; gap:16px; align-items:center;
+      font-size:14px; color:var(--muted);
+    }
+    .nav a{ padding:8px 10px; border-radius:12px; }
+    .nav a:hover{ background:var(--panel); text-decoration:none; color:var(--text); }
+
+    .actions{ display:flex; gap:10px; align-items:center; }
+    .btn{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background: var(--panel);
+      box-shadow: none;
+      color:var(--text);
+      font-weight:600;
+      cursor:pointer;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+    }
+    .btn:hover{ background: var(--panel2); border-color: rgba(255,255,255,0.18); text-decoration:none; }
+    .btn:active{ transform: scale(0.98); }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(124,58,237,0.95), rgba(6,182,212,0.75));
+      border-color: rgba(255,255,255,0.18);
+      box-shadow: 0 18px 40px rgba(124,58,237,0.22);
+    }
+    .btn.primary:hover{ filter: brightness(1.05); }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: var(--panel);
+      color:var(--muted);
+      font-size:12px;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background: var(--ok);
+      box-shadow: 0 0 0 4px rgba(34,197,94,0.16);
+    }
+
+    /* Hero */
+    .hero{
+      margin-top:26px;
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .hero{ grid-template-columns:1fr; }
+      .nav{ display:none; }
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+      border: 1px solid var(--border);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+    }
+    [data-theme="light"] .card{
+      background: linear-gradient(180deg, rgba(10,15,30,0.05), rgba(10,15,30,0.03));
+    }
+    .hero-main{ padding:22px; position:relative; overflow:hidden; }
+    .glow{
+      position:absolute; inset:-120px -120px auto auto;
+      width:280px; height:280px; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, rgba(124,58,237,0.32), rgba(6,182,212,0.0) 65%);
+      filter: blur(10px);
+      pointer-events:none;
+    }
+    .hero-title{
+      font-size:34px;
+      line-height:1.15;
+      margin:0 0 10px;
+      letter-spacing:-0.6px;
+    }
+    .hero-title span{
+      background: linear-gradient(135deg, rgba(124,58,237,1), rgba(6,182,212,1));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .hero-sub{ margin:0; color:var(--muted); max-width:62ch; }
+    .hero-meta{ margin-top:16px; display:flex; flex-wrap:wrap; gap:10px; }
+    .hero-cta{ margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
+
+    .hero-side{ padding:18px; display:flex; flex-direction:column; gap:12px; }
+    .mini{
+      padding:14px;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background: var(--panel);
+    }
+    .mini h3{ margin:0 0 8px; font-size:14px; color:var(--muted); font-weight:700; letter-spacing:0.2px; }
+    .kpi{
+      display:grid; grid-template-columns: repeat(3,1fr);
+      gap:10px;
+    }
+    .kpi .box{
+      padding:12px;
+      border-radius: 16px;
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      text-align:left;
+    }
+    .kpi .num{ font-size:18px; font-weight:800; margin:0; }
+    .kpi .lbl{ font-size:12px; color:var(--muted2); margin:0; }
+
+    /* Sections */
+    .grid{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:18px;
+    }
+    @media (max-width: 900px){ .grid{ grid-template-columns:1fr; } }
+
+    .section{ padding:18px; }
+    .section h2{
+      margin:0 0 10px;
+      font-size:18px;
+      letter-spacing:-0.2px;
+    }
+    .muted{ color:var(--muted); }
+    .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .tag{
+      font-size:12px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: var(--panel);
+      color:var(--muted);
+    }
+
+    /* Projects */
+    .projects{ margin-top:18px; }
+    .project{
+      display:flex;
+      gap:12px;
+      padding:14px;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background: var(--panel);
+    }
+    .project + .project{ margin-top:10px; }
+    .badge{
+      width:42px; height:42px;
+      border-radius:16px;
+      background: linear-gradient(135deg, rgba(124,58,237,0.95), rgba(6,182,212,0.75));
+      border:1px solid rgba(255,255,255,0.18);
+      flex:0 0 auto;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:900;
+    }
+    .project h3{ margin:0; font-size:15px; }
+    .project p{ margin:4px 0 0; color:var(--muted); font-size:13px; }
+    .project .links{ margin-top:8px; display:flex; gap:10px; flex-wrap:wrap; }
+    .link{
+      font-size:12px;
+      padding:7px 10px;
+      border-radius: 12px;
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      color:var(--text);
+    }
+
+    /* Timeline */
+    .timeline{ margin-top:10px; display:flex; flex-direction:column; gap:10px; }
+    .titem{
+      padding:12px;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background: var(--panel);
+    }
+    .trow{
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      font-size:13px;
+    }
+    .trow strong{ font-size:13px; }
+    .titem p{ margin:6px 0 0; color:var(--muted); font-size:13px; }
+
+    /* Footer */
+    footer{
+      margin-top:22px;
+      padding:16px 2px 0;
+      color:var(--muted2);
+      font-size:12px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .hr{ height:1px; background:var(--border); margin-top:18px; }
+
+    /* Theme toggle icon */
+    .icon{
+      width:16px; height:16px; display:inline-block;
+    }
+
+    /* Small helper */
+    .two-col{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+    @media (max-width: 560px){ .two-col{ grid-template-columns:1fr; } }
+    .contact{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+    @media (max-width: 700px){ .contact{ grid-template-columns:1fr; } }
+    .field{
+      padding:12px;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background: var(--panel);
+    }
+    .field .k{ font-size:12px; color:var(--muted2); }
+    .field .v{ font-size:14px; font-weight:700; margin-top:4px; word-break:break-word; }
+  </style>
+</head>
+
+<body data-theme="dark">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div style="font-size:14px;">Baxtiyor</div>
+          <div style="font-size:12px;color:var(--muted2);margin-top:-2px;">baxtiyor.tech</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Sahifa bo‘limlari">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <span class="pill"><span class="dot"></span> Open to opportunities</span>
+        <button class="btn" id="themeBtn" type="button" aria-label="Theme toggle">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Theme
+        </button>
+        <a class="btn primary" href="#contact">Let’s talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="card hero-main">
+        <div class="glow"></div>
+        <p class="pill" style="margin:0 0 10px;">
+          <span style="width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 4px rgba(6,182,212,0.16);"></span>
+          AI / Data Science • Full-Stack • Docker
+        </p>
+
+        <h1 class="hero-title">
+          Salom, men <span>Baxtiyor</span> — AI va dasturlash orqali real muammolarni yechaman.
+        </h1>
+
+        <p class="hero-sub">
+          Men Data Science, Computer Engineering va Full-Stack yo‘nalishida ishlayman.
+          Hozirda AI/ML loyihalar, MVP’lar va hackathon yechimlari ustida ishlayapman:
+          sog‘liqni saqlash (CardioRisk), qishloq xo‘jaligi (Plant/Cotton), tavsiya tizimlari va NLP.
+        </p>
+
+        <div class="hero-meta">
+          <span class="pill">📍 Uzbekistan</span>
+          <span class="pill">🧠 Focus: ML • CV • NLP</span>
+          <span class="pill">⚙️ Stack: Python • PyTorch • FastAPI • PostgreSQL • Docker</span>
+        </div>
+
+        <div class="hero-cta">
+          <!-- Linklarni o'zingnikiga almashtir -->
+          <a class="btn primary" href="https://github.com/sigmaBAXTI" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="#" onclick="alert('CV linkini keyin qo‘shamiz 🙂'); return false;">Download CV</a>
+        </div>
+      </div>
+
+      <aside class="card hero-side">
+        <div class="mini">
+          <h3>Snapshot</h3>
+          <div class="kpi">
+            <div class="box">
+              <p class="num">10+</p>
+              <p class="lbl">Mini projects</p>
+            </div>
+            <div class="box">
+              <p class="num">3+</p>
+              <p class="lbl">AI domains</p>
+            </div>
+            <div class="box">
+              <p class="num">1</p>
+              <p class="lbl">Active MVP</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini">
+          <h3>What I build</h3>
+          <div class="tags">
+            <span class="tag">Computer Vision</span>
+            <span class="tag">YOLO / Detection</span>
+            <span class="tag">Classification</span>
+            <span class="tag">Recommendation</span>
+            <span class="tag">Sentiment Analysis</span>
+            <span class="tag">Web apps</span>
+          </div>
+        </div>
+
+        <div class="mini">
+          <h3>Current goal</h3>
+          <p class="muted" style="margin:0;">
+            AI’ni “demo”dan real productga olib chiqish: toza UI, ishonchli backend,
+            interpretability, deployment va monitoring.
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT + SKILLS -->
+    <section class="grid">
+      <div class="card section" id="about">
+        <h2>About</h2>
+        <p class="muted" style="margin:0;">
+          Men amaliy loyihalar bilan o‘rganaman: dataset tayyorlash, model qurish,
+          test qilish, so‘ng MVP ko‘rinishida deploy qilish.
+          Qiziqishlarim: Computer Vision, NLP, tavsiya tizimlari va healthcare/agrifood yo‘nalishlar.
+        </p>
+
+        <div class="hr"></div>
+
+        <div class="two-col" style="margin-top:14px;">
+          <div class="field">
+            <div class="k">Strength</div>
+            <div class="v">MVP + ML integration</div>
+          </div>
+          <div class="field">
+            <div class="k">What I value</div>
+            <div class="v">Simple, reliable solutions</div>
+          </div>
+          <div class="field">
+            <div class="k">Learning</div>
+            <div class="v">IELTS + System design</div>
+          </div>
+          <div class="field">
+            <div class="k">Collab</div>
+            <div class="v">Hackathons & teamwork</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card section" id="skills">
+        <h2>Skills</h2>
+        <p class="muted" style="margin:0 0 10px;">
+          Quyidagilarni tez-tez ishlataman. (O‘zingga moslab o‘zgartir.)
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">TensorFlow/Keras</span>
+          <span class="tag">YOLOv8</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">Pandas • NumPy</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git/GitHub</span>
+          <span class="tag">Linux/WSL</span>
+          <span class="tag">Next.js (basic)</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="timeline">
+          <div class="titem">
+            <div class="trow">
+              <strong>AI/ML</strong><span class="muted2">CV • NLP • Recommenders</span>
+            </div>
+            <p>Dataset preprocessing, training, evaluation, inference pipeline, simple interpretability.</p>
+          </div>
+          <div class="titem">
+            <div class="trow">
+              <strong>Engineering</strong><span class="muted2">API • DB • Deploy</span>
+            </div>
+            <p>FastAPI backend, PostgreSQL schema, Docker compose, deploy to cloud platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card section projects" id="projects">
+      <h2>Projects</h2>
+      <p class="muted" style="margin:0 0 12px;">
+        Mana bir nechta asosiy ishlarim. Linklarni o‘zingnikiga almashtir.
+      </p>
+
+      <div class="project">
+        <div class="badge">CR</div>
+        <div>
+          <h3>CardioRiskAI — interpretable healthcare MVP</h3>
+          <p>
+            Yurak-qon tomir xavfini baholash uchun input form + model inference + tavsiya/xulosa.
+            Maqsad: demo emas, real MVP (UI/UX + logging + explainability).
+          </p>
+          <div class="links">
+            <a class="link" href="#" onclick="alert('GitHub linkini qo‘shing');return false;">Code</a>
+            <a class="link" href="#" onclick="alert('Demo linkini qo‘shing');return false;">Live demo</a>
+            <span class="link">FastAPI • Docker • PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="badge">CV</div>
+        <div>
+          <h3>Cotton/Plant Disease Detection — YOLO + classification</h3>
+          <p>
+            Paxta/plant rasmlaridan kasallikni aniqlash (klassifikatsiya) va obyekt topish (bbox).
+            Dataset: class papkalar, train pipeline, test inference.
+          </p>
+          <div class="links">
+            <a class="link" href="#" onclick="alert('Repo linkini qo‘shing');return false;">Code</a>
+            <span class="link">YOLOv8 • OpenCV</span>
+            <span class="link">Model export: .pt / .keras</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="badge">NLP</div>
+        <div>
+          <h3>Sentiment Analysis — Uzbek/English text</h3>
+          <p>
+            Matnlarni ijobiy/salbiy/neytralga ajratish, dataset tozalash, model comparison,
+            oddiy API endpoint orqali ishlatish.
+          </p>
+          <div class="links">
+            <a class="link" href="#" onclick="alert('Repo linkini qo‘shing');return false;">Code</a>
+            <span class="link">Transformers / classic ML</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE + CONTACT -->
+    <section class="grid">
+      <div class="card section" id="timeline">
+        <h2>Timeline</h2>
+        <p class="muted" style="margin:0 0 10px;">Qisqa yo‘l xaritasi (xohlasang o‘zgartirasan).</p>
+
+        <div class="timeline">
+          <div class="titem">
+            <div class="trow"><strong>Now</strong><span class="muted2">MVP + Deploy</span></div>
+            <p>CardioRiskAI’ni demo’dan real MVP’ga chiqarish: UI, API, domain, monitoring.</p>
+          </div>
+          <div class="titem">
+            <div class="trow"><strong>Next</strong><span class="muted2">Portfolio + Blog</span></div>
+            <p>baxtiyor.tech’da blog postlar: YOLO, Docker, FastAPI, DS projects.</p>
+          </div>
+          <div class="titem">
+            <div class="trow"><strong>Later</strong><span class="muted2">Internship / Job</span></div>
+            <p>Case studies, GitHub polish, testlar (IELTS/CS), real-world collaboration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card section" id="contact">
+        <h2>Contact</h2>
+        <p class="muted" style="margin:0;">
+          Hamkorlik, loyiha, hackathon yoki internship bo‘yicha bog‘lanish mumkin.
+        </p>
+
+        <div class="contact">
+          <div class="field">
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:baxtiyorpardaboyev899@gmail.com">baxtiyorpardaboyev899@gmail.com</a></div>
+          </div>
+          <div class="field">
+            <div class="k">GitHub</div>
+            <div class="v"><a href="https://github.com/sigmaBAXTI" target="_blank" rel="noopener">github.com/sigmaBAXTI</a></div>
+          </div>
+          <div class="field">
+            <div class="k">LinkedIn</div>
+            <div class="v"><a href="#" onclick="alert('LinkedIn linkini qo‘shing');return false;">Add your link</a></div>
+          </div>
+          <div class="field">
+            <div class="k">Telegram</div>
+            <div class="v"><a href="#" onclick="alert('Telegram linkini qo‘shing');return false;">Add your link</a></div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="mini" style="margin-top:14px;">
+          <h3>Quick message</h3>
+          <p class="muted" style="margin:0;">
+            Pastdagi tugma email ochadi. Xabaringda “What you need” va “deadline”ni yozsang bas.
+          </p>
+          <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="mailto:baxtiyorpardaboyev899@gmail.com?subject=Hello%20Baxtiyor&body=Hi%20Baxtiyor,%0A%0AI%20want%20to%20discuss%20...%0A%0AThanks!">Email me</a>
+            <a class="btn" href="#top">Back to top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Baxtiyor • Built with plain HTML/CSS</div>
+      <div class="muted2">Tip: GitHub + Vercel bilan 5 daqiqada deploy.</div>
+    </footer>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Theme toggle
+    const body = document.body;
+    const btn = document.getElementById("themeBtn");
+
+    function setTheme(t){
+      body.setAttribute("data-theme", t);
+      localStorage.setItem("theme", t);
+    }
+
+    const saved = localStorage.getItem("theme");
+    if(saved === "light" || saved === "dark") setTheme(saved);
+
+    btn.addEventListener("click", () => {
+      const current = body.getAttribute("data-theme") || "dark";
+      setTheme(current === "dark" ? "light" : "dark");
+    });
+  </script>
+</body>
+</html>
