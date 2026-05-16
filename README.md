@@ -1,11 +1,8 @@
-```md
 <div align="center">
-
 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="120"/>
 
 # Assalomu alaykum 👋
 # Men Baxtiyor Pardaboyev
-
 ### AI Engineer • Data Science Enthusiast • Backend Developer
 
 <img src="https://komarev.com/ghpvc/?username=sigmaBAXTI&style=for-the-badge&color=blue"/>
@@ -19,11 +16,9 @@
 <a href="https://www.linkedin.com/in/baxtiyor-pardaboyev-381a0b304">
 <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
-
 <a href="https://t.me/PardaboyevBaxtiyor">
 <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white"/>
 </a>
-
 <a href="https://leetcode.com/u/kelajak/">
 <img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode&logoColor=white"/>
 </a>
@@ -32,7 +27,7 @@
 
 ---
 
-# 👨‍💻 About Me
+## 👨‍💻 About Me
 
 - 🌱 I am currently learning **Artificial Intelligence** and **Deep Learning**
 - 🤖 Working on AI-powered agriculture systems
@@ -43,7 +38,7 @@
 
 ---
 
-# 🛠️ Technologies & Tools
+## 🛠️ Technologies & Tools
 
 <div align="center">
 
@@ -53,42 +48,41 @@
 
 ---
 
-# 📌 Featured Project
+## 📌 Featured Project
 
-## 🌿 Agrivision AI
+### 🌿 Agrivision AI
 
 AI-powered plant disease detection system using Deep Learning.
 
-### Features:
-- Plant disease classification
-- CNN-based AI model
-- Backend API integration
-- Real-time prediction
-- Mobile application support
+**Features:**
+- 🌱 Plant disease classification
+- 🧠 CNN-based AI model
+- 🔗 Backend API integration
+- ⚡ Real-time prediction
+- 📱 Mobile application support
 
 ---
 
-# 📈 GitHub Statistics
+## 📈 GitHub Statistics
 
 <div align="center">
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=sigmaBAXTI&show_icons=true&theme=tokyonight"/>
-
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sigmaBAXTI&layout=compact&theme=tokyonight"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sigmaBAXTI&theme=tokyonight"/>
+<img src="https://streak-stats.demolab.com/?user=sigmaBAXTI&theme=tokyonight"/>
 
 </div>
 
 ---
 
-# 🧠 Currently Learning
+## 🧠 Currently Learning
 
-- Deep Learning
-- Computer Vision
-- FastAPI
-- MLOps
-- AI Deployment
+- 🤖 Deep Learning
+- 👁️ Computer Vision
+- ⚡ FastAPI
+- 🔧 MLOps
+- 🚀 AI Deployment
 
 ---
 
@@ -97,4 +91,3 @@ AI-powered plant disease detection system using Deep Learning.
 ### ⭐ Thanks for visiting my profile!
 
 </div>
-```
