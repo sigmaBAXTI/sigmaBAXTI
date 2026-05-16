@@ -1,107 +1,70 @@
-````md
+```md
 <div align="center">
 
 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="120"/>
 
-# Assalomu alaykum, men Baxtiyor Pardaboyev 👨‍💻
-### Data Science • Artificial Intelligence • Backend Development
+# Assalomu alaykum 👋
+# Men Baxtiyor Pardaboyev
 
-<img src="https://komarev.com/ghpvc/?username=sigmaBAXTI&style=for-the-badge&color=blue" />
+### AI Engineer • Data Science Enthusiast • Backend Developer
+
+<img src="https://komarev.com/ghpvc/?username=sigmaBAXTI&style=for-the-badge&color=blue"/>
 
 </div>
 
 ---
-
-# 🌐 Connect With Me
 
 <div align="center">
 
 <a href="https://www.linkedin.com/in/baxtiyor-pardaboyev-381a0b304">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="https://t.me/PardaboyevBaxtiyor">
-  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
-</a>
-
-<a href="https://t.me/DataScienceWizard">
-  <img src="https://img.shields.io/badge/Telegram_Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
+<img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white"/>
 </a>
 
 <a href="https://leetcode.com/u/kelajak/">
-  <img src="https://img.shields.io/badge/LeetCode-F89F1B?style=for-the-badge&logo=leetcode&logoColor=white"/>
+<img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode&logoColor=white"/>
 </a>
 
 </div>
 
 ---
 
-# 🚀 About Me
+# 👨‍💻 About Me
 
-```python
-class Baxtiyor:
-
-    def __init__(self):
-        self.location = "Uzbekistan"
-        self.role = "AI & Data Science Developer"
-        self.learning = [
-            "Deep Learning",
-            "Computer Vision",
-            "Backend Engineering",
-            "Machine Learning"
-        ]
-
-    def current_project(self):
-        return "Agrivision AI"
-
-me = Baxtiyor()
-````
-
-* 🎯 Currently working on **AI-powered agriculture systems**
-* 🧠 Learning **Deep Learning & Computer Vision**
-* ⚙️ Building backend systems with Python
-* 📊 Interested in Data Analytics & AI Research
-* 🔥 Solving problems on LeetCode and Kaggle
+- 🌱 I am currently learning **Artificial Intelligence** and **Deep Learning**
+- 🤖 Working on AI-powered agriculture systems
+- 📊 Interested in Data Science and Machine Learning
+- ⚙️ Backend development with Python
+- 🔥 Solving coding problems on LeetCode
+- 🚀 Building real-world AI projects
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Technologies & Tools
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,cpp,mysql,postgresql,git,github,vscode,linux,fastapi,tensorflow,pytorch" />
+<img src="https://skillicons.dev/icons?i=python,cpp,mysql,postgresql,git,github,vscode,linux,fastapi,tensorflow,pytorch"/>
 
 </div>
 
 ---
 
-# 🤖 AI & Data Science Skills
+# 📌 Featured Project
 
-* Machine Learning
-* Deep Learning
-* CNN Models
-* TensorFlow / Keras
-* Data Visualization
-* Data Cleaning
-* Model Training
-* Computer Vision
-* Image Classification
-
----
-
-# 📌 Featured Projects
-
-## 🌱 Agrivision AI
+## 🌿 Agrivision AI
 
 AI-powered plant disease detection system using Deep Learning.
 
 ### Features:
-
-* Plant disease classification
-* CNN-based AI model
-* Backend API integration
-* Real-time prediction
-* Mobile App integration
+- Plant disease classification
+- CNN-based AI model
+- Backend API integration
+- Real-time prediction
+- Mobile application support
 
 ---
 
@@ -121,25 +84,17 @@ AI-powered plant disease detection system using Deep Learning.
 
 # 🧠 Currently Learning
 
-* Advanced Deep Learning
-* AI Model Optimization
-* FastAPI Backend
-* Docker & Deployment
-* MLOps Fundamentals
-
----
-
-# ⚡ Fun Fact
-
-```txt
-I turn coffee ☕ into AI models 🤖
-```
+- Deep Learning
+- Computer Vision
+- FastAPI
+- MLOps
+- AI Deployment
 
 ---
 
 <div align="center">
 
-### ⭐ If you like my projects, don't forget to star repositories!
+### ⭐ Thanks for visiting my profile!
 
 </div>
 ```
